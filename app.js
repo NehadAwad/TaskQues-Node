@@ -11,8 +11,6 @@ app.get('/hello', (req, res) => {
     res.send('Task Manager app')
 })
 
-app.use('/api/vi/tasks', tasks)
-
-
+app.use('/api/v1/tasks', tasks)
 
 app.listen(PORT, console.log(`Server is running on port ${PORT}`))    
